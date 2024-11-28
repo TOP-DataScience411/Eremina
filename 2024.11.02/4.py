@@ -1,8 +1,7 @@
 # Написать программу, которая сравнивает две клетки шахматной доски
-
+#================================================================
 bukvas = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'] # определение корректного списка буквенных обозначений шахматных клеток
 chiclos = range(1, 9) # определение корректного перечня цифровых обозначений шахматных клеток
-
 bukva1 = input('Введите английскую букву из списка a b c d e f g h  =>>> буквенное обозначение первой ячейки:').lower()
 if bukva1 not in bukvas:
     print('Введена неправильная буква, используйте указанный список a-h')
@@ -22,19 +21,19 @@ else:
                 bukva1_index = bukvas.index(bukva1)
                 chiclo1_index = chiclos.index(chiclo1)
                 if bukva1_index % 2 == chiclo1_index % 2:
-                    color1=str('Черная')
+                    color1 = str('Черная')
                 else:
-                    color1('Белая')
-        
+                    color1 = str('Белая')
+        #
                 bukva2_index = bukvas.index(bukva2)
                 chiclo2_index = chiclos.index(chiclo2)
                 if bukva2_index % 2 == chiclo2_index % 2:
-                    color2=str('Черная')
+                    color2 = str('Черная')
                 else:
-                    color2=str('Белая')
-              
-                print('Цвет первой ячейки -',color1,'; Цвет второй ячейки - ',color2)
-                if color1==color2:
+                    color2 = str('Белая')
+         #     
+                print('Цвет первой ячейки -', color1, '; Цвет второй ячейки - ', color2)
+                if color1 == color2:
                     print('да')
                 else:
                     print('нет')
