@@ -1,15 +1,11 @@
 # Написать программу, которая проверяет делится ли одно число на другое нацело
 #
-chislo1 = input('Введите целое число: ')
-chislo_1 = int(chislo1)
-chislo2 = input('Введите второе целое число: ')
-chislo_2 = int(chislo2)
-rezult_cel = chislo_1 // chislo_2
-rezult_ost = chislo_1 % chislo_2
-if rezult_ost == 0:
-    print(f"{chislo_1} делится на {chislo_2} нацело\nчастное: {rezult_cel}")
+chislo_1 = int(input('Введите целое число: '))
+chislo_2 = int(input('Введите второе целое число: '))
+if chislo_1 % chislo_2 == 0:
+    print(f"{chislo_1} делится на {chislo_2} нацело\nчастное: {chislo_1 // chislo_2}")
 else: 
-    print(f"{chislo_1} не делится на {chislo_2} нацело\nнеполное частное: {rezult_cel}\nостаток: {rezult_ost}")
+    print(f"{chislo_1} не делится на {chislo_2} нацело\nнеполное частное: {chislo_1 // chislo_2}\nостаток: {chislo_1 % chislo_2}")
 #===========================================================================    
 # C:\Users\Dina>python "D:\!   ___ОБУЧЕНИЕ DS\_ЗАДАНИЯ_DS\2.2.py"
 # Введите целое число: 10
