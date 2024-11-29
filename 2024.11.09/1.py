@@ -27,4 +27,4 @@ else:
 
 # C:\Users\Dina\GIT_LOK_Eremina>python "C:\Users\Dina\GIT_LOK_Eremina\2024.11.09\1.py"
 # Введите текст:          dind@in1414@mail.ru
-нет
+# нет
