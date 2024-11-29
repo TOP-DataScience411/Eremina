@@ -5,14 +5,13 @@ sotni = chislo_int // 100
 desyatki = (chislo_int - sotni*100) // 10
 edinic = chislo_int - sotni*100 - desyatki*10
 # ПЕРЕИМЕНОВАТЬ: sum — это имя встроенной функции, объявляя собственную переменную с таким именем вы теряете прямой доступ к встроенной функции
-sum = sotni + desyatki + edinic
+sumd = sotni + desyatki + edinic
 proizv = sotni * desyatki * edinic
 # ИСПОЛЬЗОВАТЬ везде: PEP 8 рекомендует добавлять пробел между передаваемыми в функцию аргументами
-print("Сумма цифр = ", sum, "\n", "Произведение цифр = ", proizv, sep='')
+print("Сумма цифр = ", sumd, "\nПроизведение цифр = ", proizv, sep='')
 # ИСПОЛЬЗОВАТЬ: '\nabc' вместо '\n', 'abc'
-
-
-# C:\Users\Dina>python "D:\!   ___ОБУЧЕНИЕ DS\_ЗАДАНИЯ_DS\Задание 1\4.py"
+#======================================================================
+# C:\Users\Dina\GIT_LOK_Eremina>python "C:\Users\Dina\GIT_LOK_Eremina\2024.10.27\4.py"
 # Введите положительное трёхзначное число: 333
 # Сумма цифр = 9
 # Произведение цифр = 27
