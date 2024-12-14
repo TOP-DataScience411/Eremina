@@ -1,15 +1,20 @@
-# !!!!ГЕННАДИЙ ДМИТРИЕВИЧ !!!!!!_______прошу об обратной связи:
 # что не так определила, т.к. просто вызов из интерпретатора функции дает ошибку, а с помощтю utils работает
-# 
-#>>> important_message(user_input)
+# >>> important_message(user_input)
 # Traceback (most recent call last):
-  # File "<stdin>", line 1, in <module>
+#   File "<stdin>", line 1, in <module>
 # NameError: name 'important_message' is not defined
+
+# КОММЕНТАРИЙ: о разнице между инструкциями import ... и from ... import ... я рассказывал на занятии
+
+
+# ИСПОЛЬЗОВАТЬ: импорты помещают в начало скрипта
+import utils
 
 def main():
     global user_input
     user_input = str(input('Введите текст объявления:          '))
-import utils
+    # ДОБАВИТЬ: согласно заданию данная функция должна делать что-то ещё
+
 
 #==================================================================================
 # C:\Users\Dina\GIT_LOK_Eremina>python -i "C:\Users\Dina\GIT_LOK_Eremina\2024.11.30\2.py"
